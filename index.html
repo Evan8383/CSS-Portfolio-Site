@@ -25,19 +25,24 @@
     </header>
     <main>
         <!-- flex container that has one "showcase" project that takes up 100% and two sub projects that are side by side -->
-        <section class="projects">
-            <h3>Projects</h3>
-            <div class="mainCard">PROJECT 1</div>
-            <div class="subCard">PROJECT 2</div>
-            <div class="subCard">PROJECT 3</div>
-        </section>
-        <section>
-            <!-- TODO: add experience section -->
-        </section>
-        <section>
-            <!-- TODO: add contact form -->
+        <button id="projectsButton">Projects</button>
+        <section class="projects" id="menu">
+            <img  class="main" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Temp_plate_blue.svg/601px-Temp_plate_blue.svg.png" alt="">
+            <p class="main">CAptiopn</p>
+            <img class="sub" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Temp_plate_blue.svg/601px-Temp_plate_blue.svg.png" alt="">
+            <img class="sub" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Temp_plate_blue.svg/601px-Temp_plate_blue.svg.png" alt="">
+            <p class="sub">CAptiopn</p>
+            <p class="sub">CAptiopn</p>
         </section>
     </main>
     <footer></footer>
+    <script>
+            const btn = document.querySelector("#projectsButton")
+            const menu = document.querySelector("#menu")
+            btn.addEventListener("click", ()=> {
+                menu.classList.toggle("closed")
+            })
+            
+    </script>
 </body>
 </html>

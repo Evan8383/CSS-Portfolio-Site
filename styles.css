@@ -4,7 +4,7 @@
     font-family: 'DM Sans', sans-serif;
 }
 header {
-    text-align: left;
+    text-align: center;
 }
 /* navbar */
 .navBar {
@@ -39,18 +39,48 @@ header {
 .lastName{
     font-weight: 200;
 }
+.lastName::before{
+    content: "\a";
+        white-space: pre;
+}
 
 header h2 {
     font-size: 1.24rem;
     padding-bottom: 15px;
 }
+.projects{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+main button{
+    text-align: center;
+}
+.main{
+    width: 100%
+}
+.sub{
+    width: 45%
+}
+.closed {
+    display:none
+}
 
-@media screen and (max-width: 450px){
+@media (max-width: 768px){
+    .main{
+        width: 90%
+    }
+}
+@media screen and (max-width: 425px){
     .navBar{
         display: none;
     }
-    .lastName::before{
+    .main {
+        width: 90%;
+    }
+    /* .lastName::before{
         content: "\a";
         white-space: pre;
-    }
+    } */
 }
+

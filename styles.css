@@ -1,86 +1,82 @@
 *{
+    font-family: sans-serif;
+    box-sizing: border-box
+}
+body {
     margin: 0;
     padding: 0;
-    font-family: 'DM Sans', sans-serif;
 }
-header {
-    text-align: center;
-}
-/* navbar */
-.navBar {
-    margin-bottom: 15px;
-    background-color: darkgrey;
-    border-bottom: solid black 1px;
-    box-shadow: 0 1px 1px rgba(0,0,0,0.12), 
-                0 2px 2px rgba(0,0,0,0.12), 
-                0 4px 4px rgba(0,0,0,0.12), 
-                0 8px 8px rgba(0,0,0,0.12),
-                0 16px 16px rgba(0,0,0,0.12);
-}
-.navBar ul li{
-    display: inline-flex;
-    justify-content: center;
-    padding: 8px 15px;
-    cursor: pointer;
-    border-radius: 15px;
-    width: 60px;
-}
-.navBar ul li a{
-    text-decoration: none;
-    color: black;
-}
-.firstName, .lastName {
-    line-height: 30px;
-}
-.firstName{
-    font-size: 42px;
-    font-weight: 400;
-}
-.lastName{
-    font-weight: 200;
-}
-.lastName::before{
-    content: "\a";
-        white-space: pre;
-}
-
-header h2 {
-    font-size: 1.24rem;
-    padding-bottom: 15px;
-}
-.projects{
+.navbar{
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: white;
 }
-main button{
-    text-align: center;
+.name{
+    font-size: 1.5rem;
+    margin-left: 1rem
 }
-.main{
-    width: 100%
+.navbar-links ul{
+    display: flex;
+    margin: 0;
+    padding: 0;
 }
-.sub{
-    width: 45%
+.navbar-links li{
+    list-style: none;
 }
-.closed {
-    display:none
+.navbar-links li:hover{
+    background-color: #555;
+}
+.navbar-links li a{
+    color: white;
+    text-decoration: none;
+    padding: 1rem;
+    display: block;
+}
+.toggle-button{
+    position: absolute;
+    top: 1.5rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+}
+.toggle-button .bar{
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
 }
 
-@media (max-width: 768px){
-    .main{
-        width: 90%
+
+
+
+@media (max-width: 529px) {
+    .toggle-button{
+        display: flex;
     }
-}
-@media screen and (max-width: 425px){
-    .navBar{
+    .navbar-links{
         display: none;
+        width: 100%
     }
-    .main {
-        width: 90%;
+    .navbar{
+        flex-direction: column;
+        align-items: flex-start;
     }
-    /* .lastName::before{
-        content: "\a";
-        white-space: pre;
-    } */
+    .navbar-links ul{
+        flex-direction: column;
+        width:100%
+    }
+    .navbar li{
+        text-align: center;
+    }
+    .navbar-links li a{
+        padding: .5rem 1rem
+    }
+    .navbar-links.active{
+        display:flex
+    }
 }
-

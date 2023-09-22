@@ -1,6 +1,12 @@
 :root{
     --header-color: ;
     --paragraph-color: ;
+    --heading-font: 'Playfair Display', serif;
+    --paragraph-font: 'Lato', sans-serif;
+    --heading-font-size: 30px
+}
+*{
+  font-family: var(--paragraph-font);
 }
 .card{
     width: 98%;
@@ -77,25 +83,38 @@ main{
     font-size: 3rem;
 }
 .name-header{
+    font-family: var(--heading-font);
     padding: 10px;
     margin: 0;
     color: #c1121f;
     letter-spacing: -.07em;
     animation: slide-in 1.5s ease-in-out;
 }
+.name-header::before{
+  content: "-";
+}
 .name-header span{
+    font-family: var(--heading-font);
     color: #780000;
     font-weight: 300;
     position: relative;
     top: 25px;
     right: 30px;
 }
+.name-header span::after{
+  content: "-";
+}
 .about-section{
     margin: auto;
     text-align: center;
 }
 .about-section h3{
-    font-size: 1.5;
+    font-family: var(--heading-font);
+    font-size: var(--heading-font-size);
+    margin-bottom: 0;
+}
+.about-section p{
+  margin-bottom: 60px;
 }
 .project-section{
     display: flex;
@@ -103,13 +122,20 @@ main{
     flex: 1 0 1;
     width: 100%;
 }
+.project-section h3{
+  width: 100%;
+  text-align: center;
+  font-family: var(--heading-font);
+  font-size: var(--heading-font-size);
+}
 .card h4{
+    font-family: var(--paragraph-font);
     background-color: white;
     width: 80%;
     line-height: 50px; 
     position: relative;
     bottom: 50px;
-    font-size: 1.5em;
+    font-size: calc(var(--heading-font-size) - .7em);
     margin-bottom: 0;
     border-radius: 5px;
 }
@@ -118,6 +144,25 @@ main{
     width: 90%;
     position: relative;
     bottom: 30px;
+}
+.contact-section {
+  width: 100%
+}
+.form{
+  display: flex;
+  flex-flow: row wrap;
+  text-align: center;
+  justify-content: center;
+}
+.contact-section h5{
+  font-family: var(--heading-font);
+  font-size: var(--heading-font-size);
+  text-align: center;
+}
+.contact-section .form ul{
+  display: flex;
+  list-style: none;
+  padding: 0;
 }
 
 @keyframes slide-in{
@@ -162,11 +207,9 @@ main{
     .project-card img{
         filter: none
     }
-}
-@media (max-width: 396px){
     .name-header{
-        font-size: 1em;
-    }
+      font-size: 1em;
+  }
 }
 
 @media (min-width: 768px){
@@ -174,8 +217,11 @@ main{
         width: 48%
     }
     .card.main{
-        margin-bottom: 25px;
+        margin-bottom: 30px;
         width: 90%
+    }
+    .name-header{
+      font-size: 2em;
     }
 }
 @media (min-width: 992px){

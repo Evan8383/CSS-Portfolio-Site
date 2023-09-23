@@ -1,5 +1,16 @@
 # Module-02-Challenge
+## Application links
+Repository:
 
+Live Page:
+
+## Purpose
+This site was built to create a baseline portfolio site to build upon in the future. This site was also created to test our newly learned CSS abilities.
+
+## Application Screenshots
+![app screen shot](./assets/127.0.0.1_5501_index.html.png)
+
+![app screen shot fullsize](./assets/127.0.0.1_5501_index_full.html.png)
 ## User Story
 
 ```

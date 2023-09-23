@@ -1,8 +1,8 @@
 # Module-02-Challenge
 ## Application links
-Repository:
+Repository: https://github.com/Evan8383/CSS-Portfolio-Site
 
-Live Page:
+Live Page: https://evan8383.github.io/CSS-Portfolio-Site/
 
 ## Purpose
 This site was built to create a baseline portfolio site to build upon in the future. This site was also created to test our newly learned CSS abilities.

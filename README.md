@@ -1,4 +1,8 @@
 # Module-02-Challenge
+## Credits
+Credit for the hero background photo used 
+![Photo by Jakub Dziubak]"https://unsplash.com/@jckbck?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+  
 ## Application links
 Repository: https://github.com/Evan8383/CSS-Portfolio-Site
 

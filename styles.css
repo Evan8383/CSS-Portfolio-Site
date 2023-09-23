@@ -232,6 +232,41 @@ header{
 }
 
 
+/* Footer styles */
+footer {
+  background-color: #362D2B;
+}
+footer section {
+  max-width: 600px;
+  margin: auto;
+  text-align: center;
+  color: #C2B7AE
+}
+footer section h6 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  padding: 10px;
+  font-size: var(--heading-font-size);
+  font-family: var(--heading-font);
+}
+footer section ul{
+  justify-content: space-around;
+  display: flex;
+  list-style: none;
+  margin-bottom: 0;
+  padding: 0 0 20px 0
+}
+footer section li{
+  display: flex;
+}
+footer section label{
+  text-align: right;
+  width: fit-content
+}
+footer section form{
+  padding-left: 10px
+}
+
 /* Document main header slide-in animation */
 @keyframes slide-in{
     0% {

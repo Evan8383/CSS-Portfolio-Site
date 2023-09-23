@@ -252,6 +252,7 @@ footer section h6 {
 footer section ul{
   justify-content: space-around;
   display: flex;
+  flex-wrap: wrap;
   list-style: none;
   margin-bottom: 0;
   padding: 0 0 20px 0

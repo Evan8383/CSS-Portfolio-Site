@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./node_modules/normalize.css/normalize.css">
+    <link rel="stylesheet" href="./normalize.css">
     <link rel="stylesheet" href="./styles.css">
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,79 +11,84 @@
     <title>Evan Bennett - Portfolio</title>
 </head>
 <body>
-    <header class="header">
-        <nav class="navbar">
-            <h1 class="title">Developer Portfolio</h1>
-            <a href="#" class="toggle-button" id="toggle-button">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </a>
-            <div class="navbar-links" id="navbar-links">
-                <ul>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Projects</a></li>
-                    <li><a href="#">Contact</a></li>
-                    <li><a href="#">GitHub</a></li>
-                </ul>
-            </div>
-        </nav>
-    </header>
-    <main>
-        <section class="name-section">
-            <div>
-                <h2 class="name-header" id="name-header">Evan <span>Bennett</span></h2>
-            </div>
-        </section>
-        <section class="about-section">
-            <h3>About Me!</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam unde culpa maiores rerum dignissimos non, repudiandae corporis itaque eum, sunt doloremque voluptatum provident voluptate exercitationem consequatur sapiente in quisquam magnam.</p>
-            <img src="" alt="">
-        </section>
-        <section class="project-section">
-						<h3>Projects</h3>
-            <div class="card main">
-                <h4>Flexbox Cheatsheet</h4>
-                <img src="./assets/127.0.0.1_5500_index.html.png" alt="">
-            </div>
-            <div class="card">
-                <h4>Flexbox Cheatsheet</h4>
-                <img src="./assets/evan8383.github.io_qr-code-component-main_.png" alt="">
-            </div>
-            <div class="card">
-                <h4>Flexbox Cheatsheet</h4>
-                <img src="./assets/_C__Users_EvanBennett_bootcamp_Module-01-Mini-Project_index.html.png" alt="">
-            </div>
-            <div class="card">
-                <h4>Flexbox Cheatsheet</h4>
-                <img src="./assets/evan8383.github.io_results-summary-component-main_.png" alt="">
-            </div>
-        </section>
-        <section class="contact-section">
-            <h5>Contact Me!</h5>
-            <section>
-							<div class="form">
-                <form action="submit">
-                    <ul>
-                        <li><label for="">Name</label></li>
-                        <li><input type="text"></li>
-                        <li><label for="">Email</label></li>
-                        <li><input type="email"></li>
-                        <li><label for="">Notes</label></li>
-                        <li><textarea name="" id="" cols="30" rows="10"></textarea></li>
-                    </ul>
-                </form>
-							</div>
-            </section>
-        </section>
+  <header class="header">
+    <nav class="navbar">
+      <h1 class="title">Developer Portfolio</h1>
+        <a href="" class="toggle-button" id="toggle-button">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </a>
+        <div class="navbar-links" id="navbar-links">
+          <ul>
+            <li><a href="#about-section">About</a></li>
+            <li><a href="#project-section">Projects</a></li>
+            <li><a href="#contact-section">Contact</a></li>
+            <li><a target="_blank" href="https://github.com/Evan8383">GitHub</a></li>
+            </ul>
+        </div>
+    </nav>
+  </header>
+  <main>
+    <div class="hero">
+      <section class="name-section">
+        <div>
+          <h2 class="name-header" id="name-header">Evan <span>Bennett</span></h2>
+        </div>
+      </section>
+    </div>
+    <section class="about-section" id="about-section">
+      <h3>About me</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam unde culpa maiores rerum dignissimos non, repudiandae corporis itaque eum, sunt doloremque voluptatum provident voluptate exercitationem consequatur sapiente in quisquam magnam.</p>
+      <img src="./assets/1660861484272.jpg" alt="">
+    </section>
+    <section class="project-section" id="project-section">
+		  <h3>Projects</h3>
+      <div class="card main">
+        <h4>Flexbox Cheatsheet</h4>
+        <a target="_blank" href="https://evan8383.github.io/Module-02-Mini-Project/"><img src="./assets/127.0.0.1_5500_index.html.png" alt="Pink and Black themed image showing css code to recreate flexbox elements."></a>
+      </div>
+      <div class="card">
+        <h4>QR Code</h4>
+        <a target="_blank" href="https://evan8383.github.io/qr-code-component-main/"><img src="./assets/evan8383.github.io_qr-code-component-main_.png" alt="CSS component showing a QR Code."></a>
+      </div>
+      <div class="card">
+        <h4>First Website</h4>
+        <a target="_blank" href="https://evan8383.github.io/Module-01-Mini-Project/"><img src="./assets/_C__Users_EvanBennett_bootcamp_Module-01-Mini-Project_index.html.png" alt="Screenshot of a basic website built with HTML and CSS."></a>
+      </div>
+      <div class="card">
+        <h4>Test Result Interface</h4>
+        <a target="_blank" href="https://evan8383.github.io/results-summary-component-main/"><img src="./assets/evan8383.github.io_results-summary-component-main_.png" alt="HTML and CSS component built to give an example of a results summary page within an application."></a>
+      </div>
+    </section>
+    <section class="contact-section" id="contact-section">
+      <h5>Contact me</h5>
+      <section>
+        <form class="form" action="submit">
+          <ul>
+            <li>
+              <input type="text" placeholder="Name:">
+            </li>
+            <li>
+              <input type="email" placeholder="Email:">
+            </li>
+            <li>
+              <input type="text" placeholder="Subject:">
+            </li>
+            <li>
+              <textarea placeholder="Message" name="" id="" cols="30" rows="10"></textarea>
+            </li>
+          </ul>
+        </form>
+      </section>
+    </section>
     </main>
     <script>
-        const toggleButton = document.querySelector("#toggle-button")
-        const menu = document.querySelector("#navbar-links")
-
-        toggleButton.addEventListener("click", () => {
-            menu.classList.toggle("active")
-        })
+      const toggleButton = document.querySelector("#toggle-button")
+      const menu = document.querySelector("#navbar-links")
+      toggleButton.addEventListener("click", () => {
+          menu.classList.toggle("active")
+      })
     </script>
 </body>
 </html>
